@@ -1,9 +1,11 @@
+import { Provider } from "react-redux";
+import { store } from "./Redux/store";
 
 const Home = () => {
     return (
-        <div>
+        <Provider store={store}>
             this is home
-        </div>
+        </Provider>
     );
 };
 
